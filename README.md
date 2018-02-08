@@ -1,35 +1,31 @@
-# Hello World Docker Container
+# Hello World Docker Container - SSL Version
 
-pushed to https://hub.docker.com/r/u1ih/hello
+pushed to https://hub.docker.com/r/u1ih/hello-ssl
 
 Run with:
 
-`docker run -d -p 8080:8080 u1ih/hello`
+`docker run -d -P u1ih/docker-hello-ssl`
 
 Steps:
 
 ## 1: Get Source
 
-`git clone https://github.com/u1i/docker-hello`
+`git clone https://github.com/u1i/docker-hello-ssl`
 
-## 2: Make changes
-
-e.g. modify index.html in the app directory
-
-## 3: Build Container
+## 2: Build Container
 
 `docker build .`  (take note of the new IMAGE_ID)
 
-## 4: Tag Container and push to Dockerhub
+## 3: Tag Container and push to Dockerhub
 
-`docker tag <IMAGE_ID> <YOUR_USERNAME>/hello:<VERSION_NUMBER>`
+`docker tag <IMAGE_ID> <YOUR_USERNAME>/hello-ssl:<VERSION_NUMBER>`
 
-`docker tag <IMAGE_ID> <YOUR_USERNAME>/hello:latest`
+`docker tag <IMAGE_ID> <YOUR_USERNAME>/hello-ssl:latest`
 
-`docker push <YOUR_USERNAME>/hello:<VERSION_NUMBER>`
+`docker push <YOUR_USERNAME>/hello-ssl:<VERSION_NUMBER>`
 
-`docker push <YOUR_USERNAME>/hello:latest`
+`docker push <YOUR_USERNAME>/hello-ssl:latest`
 
-## 5: Run Container
+## 4: Run Container
 
-`docker run -d -p 8080:8080 <YOUR_USERNAME>/hello`
+`docker run -d -P <YOUR_USERNAME>/hello-ssl`
