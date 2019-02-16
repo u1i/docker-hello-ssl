@@ -4,7 +4,7 @@ pushed to https://hub.docker.com/r/u1ih/hello-ssl
 
 Run with:
 
-`docker run -d -P u1ih/docker-hello-ssl`
+`docker run -d -P u1ih/hello-ssl`
 
 Steps:
 
